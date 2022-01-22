@@ -1,0 +1,13 @@
+// Add your dependencies here
+
+dependencies {
+    compile('com.github.GTMEGA:GT5-Unofficial:5.28.15-GTMEGA:dev')
+    compile("com.github.GTNewHorizons:StructureLib:master-SNAPSHOT:dev")
+    compile("com.github.GTNewHorizons:NotEnoughItems:master-SNAPSHOT:dev")
+
+    compile("net.industrial-craft:industrialcraft-2:2.2.828-experimental:dev")
+    compileOnly("org.projectlombok:lombok:1.18.22") {
+        transitive = false
+    }
+    annotationProcessor("org.projectlombok:lombok:1.18.22")
+}
