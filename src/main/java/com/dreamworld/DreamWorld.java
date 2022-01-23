@@ -32,33 +32,7 @@ public class DreamWorld {
     public void postInit(FMLPostInitializationEvent event) {
         proxy.postInit(event);
     }
-
-    @Mod.EventHandler
-    public void serverAboutToStart(FMLServerAboutToStartEvent event) {
-        proxy.serverAboutToStart(event);
-    }
-
-    @Mod.EventHandler
-    // register server commands in this event handler
-    public void serverStarting(FMLServerStartingEvent event) {
-        proxy.serverStarting(event);
-    }
-
-    @Mod.EventHandler
-    public void serverStarted(FMLServerStartedEvent event) {
-        proxy.serverStarted(event);
-    }
-
-    @Mod.EventHandler
-    public void serverStopping(FMLServerStoppingEvent event) {
-        proxy.serverStopping(event);
-    }
-
-    @Mod.EventHandler
-    public void serverStopped(FMLServerStoppedEvent event) {
-        proxy.serverStopped(event);
-    }
-
+    
     public static void debug(String message) {
         LOG.debug(message);
     }
